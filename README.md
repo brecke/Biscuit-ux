@@ -1,4 +1,6 @@
 # Biscuit-ux
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbrecke%2FBiscuit-ux.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbrecke%2FBiscuit-ux?ref=badge_shield)
+
 
 This is an experimental frontend for Apereo's Open Academic Environment. In time this will implement the new design for OAE and connect to the [backend](https://github.com/oaeproject/Hilary/).
 
@@ -24,3 +26,6 @@ Integration with the backend is still experimental and requires a few changes to
 ## Help
 
 Find us on [discord](https://discord.gg/RShTcdq).
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbrecke%2FBiscuit-ux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbrecke%2FBiscuit-ux?ref=badge_large)
