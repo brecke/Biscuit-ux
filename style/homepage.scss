@@ -1,11 +1,4 @@
-@import "@material/button/mdc-button";
 
-.foo-button {
-  @include mdc-button-ink-color(teal);
-  @include mdc-states(teal);
-}
-
-h2 {
-  color: green;
-  text-decoration: underline;
-}
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";

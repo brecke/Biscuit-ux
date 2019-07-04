@@ -12,6 +12,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 const autoprefixer = require('autoprefixer');
+const tailwindcss = require('tailwindcss');
 
 module.exports = [
   {
@@ -45,8 +46,9 @@ module.exports = [
             {loader: 'css-loader'},
             {
               loader: 'postcss-loader',
+              ident: 'postcss',
               options: {
-                plugins: () => [autoprefixer()],
+                plugins: () => [autoprefixer(), tailwindcss()],
               },
             },
             {

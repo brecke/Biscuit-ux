@@ -1,6 +1,5 @@
 import {html, css} from 'lit-element';
 import {PageViewElement} from './page-view-element.js';
-// import {SharedStyles} from './shared-styles.js';
 
 import homepageStyles from './../../style/homepage.scss';
 import sharedStyles from './../../style/app.scss';
@@ -8,7 +7,6 @@ import legacyStyles from '../../style/legacy.css';
 
 class OAEHomepage extends PageViewElement {
   static get styles() {
-    // return [SharedStyles];
     return [homepageStyles, sharedStyles, legacyStyles];
   }
 
@@ -17,11 +15,11 @@ class OAEHomepage extends PageViewElement {
       <style include="legacy"></style>
       <style include="homepage"></style>
       <style include="app"></style>
-      <section>
-        <h2>This is the homepage</h2>
-        <button class="foo-button mdc-button">Button</button>
-      </section>
-    `;
+      <h2 class="text-center text-4xl italic font-extrabold">This is the homepage</h2>
+      <p class="text-3xl text-gray-500">
+        This is tailwind
+        </p>
+        `;
   }
 }
 window.customElements.define('oae-landing-page', OAEHomepage);

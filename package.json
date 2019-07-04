@@ -36,8 +36,9 @@
     "redux-thunk": "^2.3.0",
     "regenerator-runtime": "^0.13.2",
     "reselect": "^4.0.0",
-    "universal-cookie": "^4.0.0",
-    "snyk": "^1.189.0"
+    "snyk": "^1.189.0",
+    "tailwindcss": "^1.0.4",
+    "universal-cookie": "^4.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.0",
@@ -64,8 +65,8 @@
     "pixelmatch": "^4.0.2",
     "polymer-cli": "^1.9.3",
     "polyserve": "^0.27.0",
-    "prettier": "^1.18.2",
     "postcss-loader": "^3.0.0",
+    "prettier": "^1.18.2",
     "prpl-server": "^1.4.0",
     "puppeteer": "^1.5.0",
     "regenerator-runtime": "^0.13.2",
