@@ -28,7 +28,7 @@ class OAEHomepage extends PageViewElement {
       <section>
         <h2>This is the homepage</h2>
         <mwc-icon>sentiment_very_satisfied</mwc-icon>
-        <mwc-button>Submit</mwc-button>
+        <mwc-button raised="true", disabled="true">Submit</mwc-button>
       </section>
     `;
   }
