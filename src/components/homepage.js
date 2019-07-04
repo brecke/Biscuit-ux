@@ -2,6 +2,8 @@ import {html, css} from 'lit-element';
 import {PageViewElement} from './page-view-element.js';
 import {Icon} from "@material/mwc-icon";
 import { Button } from "@material/mwc-button"
+import "@material/mwc-drawer";
+import "@material/mwc-top-app-bar";
 // import {SharedStyles} from './shared-styles.js';
 
 import homepageStyles from './../../style/homepage.scss';
@@ -19,6 +21,10 @@ class OAEHomepage extends PageViewElement {
       <style include="legacy"></style>
       <style include="homepage"></style>
       <style include="app"></style>
+      <mwc-top-app-bar>Topbar here!</mwc-top-app-bar>
+      <mwc-drawer>
+        <span>Stuff here</span>
+      </mwc-drawer>
       <section>
         <h2>This is the homepage</h2>
         <mwc-icon>sentiment_very_satisfied</mwc-icon>
