@@ -23,6 +23,8 @@
   },
   "dependencies": {
     "@material/button": "^3.0.0",
+    "@material/mwc-button": "^0.6.0",
+    "@material/mwc-icon": "^0.6.0",
     "@polymer/app-layout": "^3.0.0",
     "@polymer/polymer": "^3.1.0",
     "@webcomponents/webcomponentsjs": "^2.0.0",
@@ -61,8 +63,8 @@
     "pixelmatch": "^4.0.2",
     "polymer-cli": "^1.9.3",
     "polyserve": "^0.27.0",
-    "prettier": "^1.18.2",
     "postcss-loader": "^3.0.0",
+    "prettier": "^1.18.2",
     "prpl-server": "^1.4.0",
     "puppeteer": "^1.5.0",
     "regenerator-runtime": "^0.13.2",
