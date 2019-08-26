@@ -8,10 +8,55 @@ import './tag-card.js';
 import './news-feed.js';
 import './quick-settings.js';
 import './tags.js';
+import '@mpachnis/mp-calendar/mp-calendar.js';
 
 class OAEDashboard extends PageViewElement {
   static get styles() {
     return [sharedStyles];
+  }
+
+  static get properties() {
+    return {
+      dayLabels: { type: Array },
+      monthLabels: { type: Array },
+      colors: { type: Object }
+    };
+  }
+
+  constructor() {
+    super();
+
+    this.dayLabels = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+    this.monthLabels = [
+      'Janeiro',
+      'Fevereiro',
+      'Março',
+      'Abril',
+      'Maio',
+      'Junho',
+      'Julho',
+      'Agosto',
+      'Setembro',
+      'Outubro',
+      'Novembro',
+      'Dezembro'
+    ];
+
+    let headerBg = '#222222';
+    let mainBg = '#333333';
+    let mainHeaderColor = '#b5b5b5';
+    this.colors = { headerBg, mainBg, mainHeaderColor };
+  }
+
+  firstUpdated(changedProperties) {
+    let cal = this.shadowRoot.querySelector('#calendar');
+    cal.dayLabels = this.dayLabels;
+    cal.monthLabels = this.monthLabels;
+
+    cal.addEventListener('chosen-changed', e => {
+      console.log('changed! here it is: ');
+      console.log(e.target.chosen);
+    });
   }
 
   render() {
@@ -40,6 +85,11 @@ class OAEDashboard extends PageViewElement {
                             <img src="./../../node_modules/@mdi/svg/svg/tag-text-outline.svg" />
                           </span>
                           <h3>RECENT ACTIVITY</h3>
+                          <mp-calendar
+                            id="calendar"
+                            style="--main-bg: ${this.colors.mainBg}; --header-bg: ${this.colors
+                              .headerBg} --main-header-color: ${this.colors.mainHeaderColor}"
+                          ></mp-calendar>
                         </section>
                         <news-feed></news-feed>
                       </section>
